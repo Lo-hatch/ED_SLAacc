@@ -14,8 +14,10 @@ SLA of PFT change with CO2 concentration
 - io/ed_xml_config.f90 ok
 - io/ed_opspec.F90 ok
 
-note: If allowing SLA to change with CO2, NL%TRAIT_PLASTICITY_SCHEME **NOT** equal to 0, NL%ISTRUCT_GROWTH_SCHEME **MUST** euqal to 2
-The specifc modifications include:
+## note
+If allowing SLA to change with CO2, NL%TRAIT_PLASTICITY_SCHEME **NOT** equal to 0, NL%ISTRUCT_GROWTH_SCHEME **MUST** euqal to 2
+
+## The specifc modifications:
 1. adding a new parameter: kplastic_ref_lai
 - This paramter is for trait_plasticity_scheme=3, and used to determine kplastic_vm0, kplastic_LL. The equations are derived from observation in BCI.
 - This parameter can be set through xml
