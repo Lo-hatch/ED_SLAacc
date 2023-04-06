@@ -24,7 +24,7 @@ If allowing SLA to change with CO2, NL%TRAIT_PLASTICITY_SCHEME **NOT** equal to 
 - refers to "init/ed_params.f90", "memory/pft_coms.f90" and "io/ed_xml_config.f90"
 2. adding a new input variable: NL%include_these_pft_sla
 - This paramter is used to specify SLA of which pfts can change with CO2 
-- The input form is like "NL%include_these_pft"
+- The input form is like "NL%include_these_pft", e.g., [2 3 4]
 - refers to " "init/ed_params.f90", "memory/pft_coms.f90", "memory/ename_coms.f90" and "io/ed_load_namelist.f90"
 3. adding a new option for struct growth scheme, i.e., ISTRUCT_GROWTH_SCHEME=2
 - ISTRUCT_GROWTH_SCHEME must be set to 2 if allowing SLA to be plastic, i.e., NL%TRAIT_PLASTICITY_SCHEME not equal to 0
